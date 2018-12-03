@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.as{
+  top:50%;
+  left:30%;
+}
+div{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  animation-name: example;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+
+}
+
+
+/* Standard syntax */
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    100%  { left:500px; top:0px;}
+
+}
+
+
+.css-rose {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  //margin: -15px 0 0 -15px;
+  background: #f80;
+  border-radius: 50%;
+  /*border-left: 15px solid #000;
+  border-top: 15px solid #ff0;
+  border-right: 15px solid #000;
+  border-bottom: 15px solid #ff0;*/
+  box-shadow:
+    0 0 10px rgba(0,0,0,.5),
+
+    10px 0 0 #f00,
+    12px 0 10px rgba(0,0,0,.5),
+    0 10px 0 #f00,
+    0 12px 10px rgba(0,0,0,.5),
+    -10px 0 0 #f00,
+    -12px 0 10px rgba(0,0,0,.5),
+    0 -10px 0 #f00,
+    0 -12px 10px rgba(0,0,0,.5),
+
+    10px -10px 0 5px #f00,
+    12px -12px 10px  5px rgba(0,0,0,.5),
+    10px 10px 0 5px #f00,
+    12px 12px 10px  5px rgba(0,0,0,.5),
+    -10px 10px 0 5px #f00,
+    -12px 12px 10px  5px rgba(0,0,0,.5),
+    -10px -10px 0 5px #f00,
+    -12px -12px 10px  5px rgba(0,0,0,.5),
+
+    10px 0 0 15px #f00,
+    12px 0 10px 15px rgba(0,0,0,.5),
+    0 10px 0 15px #f00,
+    0 12px 10px 15px rgba(0,0,0,.5),
+    -10px 0 0 15px #f00,
+    -12px 0 10px 15px rgba(0,0,0,.5),
+    0 -10px 0 15px #f00,
+    0 -12px 10px 15px rgba(0,0,0,.5),
+
+    10px -10px 0 20px #f00,
+    12px -12px 10px 20px rgba(0,0,0,.5),
+    10px 10px 0 20px #f00,
+    12px 12px 10px 20px rgba(0,0,0,.5),
+    -10px 10px 0 20px #f00,
+    -12px 12px 10px 20px rgba(0,0,0,.5),
+    -10px -10px 0 20px #f00,
+    -12px -12px 10px 20px rgba(0,0,0,.5),
+
+    10px 0 0 35px #f00,
+    12px 0 10px 35px rgba(0,0,0,.5),
+    0 10px 0 35px #f00,
+    0 12px 10px 35px rgba(0,0,0,.5),
+    -10px 0 0 35px #f00,
+    -12px 0 10px 35px rgba(0,0,0,.5),
+    0 -10px 0 35px #f00,
+    0 -12px 10px 35px rgba(0,0,0,.5),
+
+    10px -10px 0 45px #f00,
+    12px -12px 10px 45px rgba(0,0,0,.5),
+    10px 10px 0 45px #f00,
+    12px 12px 10px 45px rgba(0,0,0,.5),
+    -10px 10px 0 45px #f00,
+    -12px 12px 10px 45px rgba(0,0,0,.5),
+    -10px -10px 0 45px #f00,
+    -12px -12px 10px 45px rgba(0,0,0,.5);
+}
+
+.css-rose-stem {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index:1;
+  width: 100px;
+
+  height: 300px;
+
+  border-right: 8px solid #6d9816;
+  border-top-right-radius: 100px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -40px;
+    bottom: -5px;
+    z-index: 1;
+    width: 1px;
+    height: 70px;
+    border: 1px solid #6d9816;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-radius: 100%;
+    transform: rotate(45deg);
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 12px;
+    bottom: 30px;
+    width: 1px;
+    z-index: 1;
+    height: 70px;
+    border: 1px solid #6d9816;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+  }
+}
